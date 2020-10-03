@@ -595,3 +595,19 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+.active {
+  color: #ee5f5b;
+  text-decoration: none;
+}
+
+.active:hover, .navlink:hover {
+  color: white;
+  border: 1px dotted white;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}
