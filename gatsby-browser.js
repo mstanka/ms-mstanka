@@ -4,4 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+exports.onRouteUpdate = ({ location, action }) => {
+  console.log("route changed", { location, action })
+}
