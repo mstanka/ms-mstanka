@@ -16,20 +16,20 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "undraw_web_development.svg" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      #   iconImage: file(relativePath: { eq: "gatsby-icon.png" }) {
-      #   childImageSharp {
-      #     fluid(maxWidth: 300) {
-      #       ...GatsbyImageSharpFluid
-      #     }
-      #   }
-      # }      
+        iconImage: file(relativePath: { eq: "gatsby-icon.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }      
     }
   `)
 
