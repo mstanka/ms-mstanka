@@ -6,27 +6,20 @@
  */
 
 import React from "react"
+import { ThemeProvider } from "styled-components"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useMetaDataQuery } from "hooks/useMetaDataQuery"
+import { GlobalStyles, darkTheme } from "styles/GlobalStyles"
 
 import Header from "./header"
-import "components/layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          author
-        }
-      }
-    }
-  `)
+  const data = useMetaDataQuery()
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <ThemeProvider theme={darkTheme}>
+      <GlobalStyles />
+      <Header siteTitle={data?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -41,10 +34,10 @@ const Layout = ({ children }) => {
           }}
         >
           © {new Date().getFullYear()}, Built by
-          {` `} {data.site.siteMetadata.author} {` `} using Gatsby.
+          {` `} {data.author} {` `} using Gatsby.
         </footer>
       </div>
-    </>
+    </ThemeProvider>
   )
 }
 

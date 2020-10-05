@@ -12,7 +12,7 @@ const isActive = ({ isCurrent }) => {
 const NavLink = props => <Link getProps={isActive} {...props} />
 
 const HeaderWrapper = styled.header`
-  background: #3a3f44;
+  background: ${props => props.theme.colors.headerBG};
   margin-bottom: 1.45rem;
   font-size: 1.7rem;
 `
@@ -34,15 +34,14 @@ const Logo = styled.img`
   width: 70px;
   padding: 3px;
   margin-right: 16px;
-  border: 1px solid #e9ecef;
+  border: 1px solid ${props => props.theme.colors.cardBG};
   border-radius: 50%;
 `
 
 const NavLinkWrapper = styled(Link)`
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   text-transform: uppercase;
-  color: white;
 
   & > a {
     display: inline-block;
@@ -51,17 +50,17 @@ const NavLinkWrapper = styled(Link)`
   }
 
   .active {
-    color: #ee5f5b;
+    color: ${props => props.theme.colors.proBG};
   }
 
   .active:hover,
   .navlink:hover {
-    color: white;
-    border: 1px dotted white;
+    color: ${props => props.theme.colors.proBG};
+    border: 1px dotted ${props => props.theme.colors.proBG};
   }
 
   .navlink {
-    color: white;
+    color: ${props => props.theme.colors.cardBG};
   }
 `
 
