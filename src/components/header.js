@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import logo from "../images/mstanka.png"
+import logo from "images/mstanka.png"
 
 const isActive = ({ isCurrent }) => {
   return { className: isCurrent ? "active" : "navlink" }
