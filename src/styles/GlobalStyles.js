@@ -7,28 +7,28 @@ export const colors = {
   secondColor: "#802A14",
   tertColor: "#51d25d",
   quatColor: "#2e7234",
-  darkColor: "#272b30",
-  lightColor: "#fff",
-}
-
-export const darkTheme = {
-  colors: {
-    mainBG: colors.darkColor,
-    headerBG: colors.lightColor,
-    cardBG: colors.secondColor,
-    proBG: colors.primColor,
-    text: colors.lightColor,
-    textSecond: colors.tertColor,
-  },
+  darkColor: "#213548",
+  lightColor: "#f0f0f0",
 }
 
 export const lightTheme = {
   colors: {
-    mainBG: colors.lightColor,
-    headerBG: colors.darkColor,
-    cardBG: colors.quatColor,
-    proBG: colors.tertColor,
+    mainBG: colors.darkColor,
+    headerBG: colors.primColor,
+    cardBG: colors.secondColor,
+    proBG: colors.lightColor,
     text: colors.darkColor,
+    textSecond: colors.tertColor,
+  },
+}
+
+export const darkTheme = {
+  colors: {
+    mainBG: colors.lightColor,
+    headerBG: colors.tertColor,
+    cardBG: colors.quatColor,
+    proBG: colors.darkColor,
+    text: colors.lightColor,
     textSecond: colors.primColor,
   },
 }
@@ -87,17 +87,28 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin: 30px 0 -15px 0;
+    @media screen and (min-width: 768px) {
+      font-size: 2.4rem;
+    }
+  }
+
+
   h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 1.8px;
     text-transform: uppercase;
     @media screen and (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
   h3 {
-      font-size: 0.8rem;
+      font-size: .8rem;
       letter-spacing: 1.5px;
       margin: 30px 0 -15px 0;
       @media screen and (min-width: 768px) {
