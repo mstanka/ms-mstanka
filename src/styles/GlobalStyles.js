@@ -118,5 +118,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
+    font-family: 'Merienda One', cursive;
+    transition: all 0.5s ease;
   }
 `
