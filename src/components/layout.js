@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import { useMetaDataQuery } from "hooks/useMetaDataQuery"
 import { GlobalStyles, darkTheme } from "styles/GlobalStyles"
 
-import Header from "components/Header/header"
+import Header from "components/Header/Header"
 
 const Layout = ({ children }) => {
   const data = useMetaDataQuery()

@@ -20,13 +20,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-          },
-        ],
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -34,6 +31,16 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

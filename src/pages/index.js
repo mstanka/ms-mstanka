@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "components/layout"
-import HomeIntro from "components/homeIntro"
+import HomeIntro from "components/HomeIntro/HomeIntro"
 import SEO from "components/seo"
 
 const IndexPage = () => (
