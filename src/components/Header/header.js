@@ -2,52 +2,38 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-import logo from "images/mstanka.png"
-import menuIcon from "images/menu-open.svg"
+// hooks
+import { useSiteConfigQuery } from "hooks/useSiteConfigQuery"
 
+// componenents
+import Menu from 'components/Menu/Menu'
+import Hamburger from 'components/Hamburger/Hamburger'
+import MobileMenu from 'components/MobileMenu/MobileMenu'
+
+// styles
 import {
   HeaderWrapper,
-  Inner,
-  LogoWrapper,
-  Logo,
-  Toggle,
-  MenuIcon,
-  NavLinkWrapper,
-} from "components/Header/header.styles"
+  Logo,  
+} from "components/Header/Header.styles"
 
-const isActive = ({ isCurrent }) => {
-  return { className: isCurrent ? "active" : "navlink" }
-}
-
-const NavLink = props => <Link getProps={isActive} {...props} />
-
-const Header = () => {
-  const [isExpanded, toggleExpansion] = useState(false)
+const Header = ({ siteTitle = `` }) => {
+  const siteConfig = useSiteConfigQuery()
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <HeaderWrapper>
-      <Inner>
-        <LogoWrapper>
-          <NavLink to="/">
-            <Logo src={logo} alt="Logo" />
-          </NavLink>
-        </LogoWrapper>
-        <Toggle onClick={() => toggleExpansion(!isExpanded)}>
-          <MenuIcon src={menuIcon} alt="Menu Icon" />
-        </Toggle>
-        <NavLinkWrapper className={`${isExpanded ? `visible` : `hidden`}`}>
-          <NavLink to="/">About</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/blog">Blog </NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </NavLinkWrapper>
-      </Inner>
+    <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+    <MobileMenu menuOpen={menuOpen} items={siteConfig.menu} />
+    <Menu items={siteConfig.menu} />
+      <Link to="/">
+        <Logo src={siteConfig.logo.publicURL} alt={siteTitle} />
+      </Link>
+      <div>
+      Mode Button
+      </div>
     </HeaderWrapper>
   )
 }
 
-NavLink.propTypes = {
-  isActive: PropTypes.string,
-}
 
 export default Header

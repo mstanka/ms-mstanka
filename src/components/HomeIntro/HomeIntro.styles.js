@@ -1,9 +1,8 @@
-import React from "react"
 import styled from "styled-components"
-import WebDevImage from "images/undraw_web_dev.svg"
 import { colors } from "styles/GlobalStyles"
 
-const Wrapper = styled.section`
+
+export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,11 +19,11 @@ const Wrapper = styled.section`
   }
 `
 
-const HeroName = styled.h1`
+export const HeroName = styled.h1`
   color: ${colors.secondColor};
 `
 
-const HeroTitle = styled.h2`
+export const HeroTitle = styled.h2`
   text-transform: uppercase;
   background-image: linear-gradient(
     to right,
@@ -52,7 +51,7 @@ const HeroTitle = styled.h2`
   }
 `
 
-const HeroImageWrapper = styled.div`
+export const HeroImageWrapper = styled.div`
   max-width: 20rem;
   margin-bottom: 3rem;
 
@@ -65,7 +64,7 @@ const HeroImageWrapper = styled.div`
   }
 `
 
-const HeroText = styled.div`
+export const HeroText = styled.div`
   text-align: center;
   padding: 0 1rem;
 
@@ -73,22 +72,3 @@ const HeroText = styled.div`
     padding: 0 3rem;
   }
 `
-
-const HomeIntro = () => (
-  <Wrapper>
-    <HeroName> Marketa Stankova</HeroName>
-    <HeroTitle>Web Developer and Designer</HeroTitle>
-    <HeroImageWrapper>
-      <img src={WebDevImage} alt="Web Development" />
-    </HeroImageWrapper>
-    <HeroText>
-      I build modern responsive websites using{" "}
-      <a href="https://jamstack.org/">JAMstack</a> approach. After several
-      websites built on Wordpress, I found excitement in using HTML/CSS and
-      Javascript's frameworks. I learn about programming in general, about UI/UX
-      design, cloud technologies, and other exciting topics.
-    </HeroText>
-  </Wrapper>
-)
-
-export default HomeIntro
