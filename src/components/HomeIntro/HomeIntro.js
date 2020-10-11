@@ -22,7 +22,7 @@ const HomeIntro = () => (
       <a href="https://jamstack.org/">JAMstack</a> approach. After several
       websites built on Wordpress, I found excitement in using HTML/CSS and
       Javascript's frameworks. I learn about programming in general, about UI/UX
-      design, cloud technologies, and other exciting topics.
+      design, cloud technologies, and other interesting topics.
     </HeroText>
   </Wrapper>
 )

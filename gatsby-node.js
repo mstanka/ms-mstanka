@@ -1,9 +1,8 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
-const PostTemplate = path.resolve("./src/templates/post-template.js")
-const BlogTemplate = path.resolve("./src/templates/blog-template.js")
 
+// create slug
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === "MarkdownRemark") {
@@ -16,11 +15,30 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+
+//create pages
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+  const content = await graphql(`
     {
-      allMarkdownRemark {
+      posts: allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "post" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              published
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+
+      pages: allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "page" } } }
+      ) {
         edges {
           node {
             fields {
@@ -32,35 +50,51 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const posts = result.data.allMarkdownRemark.edges
+  //do nothing more if error
+  if (content.error) return
 
-  posts.forEach(({ node: post }) => {
+  const allPosts = content.data.posts.edges
+  const allPages = content.data.pages.edges
+
+  // create the individual post pages
+  allPosts.forEach(({ node }) => {
+    if (node.frontmatter.published) {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/post.js`),
+        context: {
+          // data passed to context is available in page queries as GraphQL variables
+          slug: node.fields.slug,
+        },
+      })
+    }
+  })
+
+  //create the individual pages
+  allPages.forEach(({ node }) => {
     createPage({
-      path: `posts${post.fields.slug}`,
-      component: PostTemplate,
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/page.js`),
       context: {
-        slug: post.fields.slug,
+        // data passed to context is available in page queries as GraphQL variables
+        slug: node.fields.slug,
       },
     })
   })
 
-  const postsPerPage = 2
-  const totalPages = Math.ceil(posts.length / postsPerPage)
-  Array.from({ length: totalPages }).forEach((_, index) => {
-    const currentPage = index + 1
-    const isFirstPage = index === 0
-    const isLastPage = currentPage === totalPages
-
+  // create archive pages
+  const postsPerPage = 3
+  const numPages = Math.ceil(allPosts.length / postsPerPage)
+  // use underscore because we don't use the first value
+  Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: isFirstPage ? "/blog" : `/blog/${currentPage}`,
-      component: BlogTemplate,
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: path.resolve(`./src/templates/blog.js`),
       context: {
         limit: postsPerPage,
-        skip: index * postsPerPage,
-        isFirstPage,
-        isLastPage,
-        currentPage,
-        totalPages,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
       },
     })
   })

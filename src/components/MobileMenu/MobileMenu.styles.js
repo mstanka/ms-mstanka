@@ -24,11 +24,11 @@ export const Wrapper = styled.div`
 
 export const Nav = styled.ul`
   position: absolute;
-  width: 40%;
+  width: 60%;
   height: 100vh;
   top: 100px;
   list-style-type: none;
-  padding: 0;
+  padding: 0 2rem;
   font-family: "Merienda One", cursive;
   font-size: 1.2rem;
   background: ${props => props.theme.colors.headerBG};

@@ -36,11 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-          },
-        ],
+        plugins: [`gatsby-remark-reading-time`],
       },
     },
     `gatsby-transformer-sharp`,

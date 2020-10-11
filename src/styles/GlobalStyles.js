@@ -19,6 +19,7 @@ export const lightTheme = {
     proBG: colors.lightColor,
     text: colors.darkColor,
     textSecond: colors.tertColor,
+    textQuat: colors.quatColor,
   },
 }
 
@@ -30,6 +31,7 @@ export const darkTheme = {
     proBG: colors.darkColor,
     text: colors.lightColor,
     textSecond: colors.primColor,
+    textQuat: colors.tertColor,
   },
 }
 
