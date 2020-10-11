@@ -2,7 +2,7 @@
 type: "post"
 title: "My Second Markdown Post"
 date: "2020-10-04"
-image: "../images/blog-img-001.jpg"
+image: "../../images/blog-img-001.jpg"
 published: true
 ---
 

@@ -1,7 +1,6 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
-
 // create slug
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -15,7 +14,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-
 //create pages
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -23,6 +21,21 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       posts: allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "post" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              published
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+
+      projects: allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "project" } } }
       ) {
         edges {
           node {
@@ -55,6 +68,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const allPosts = content.data.posts.edges
   const allPages = content.data.pages.edges
+  const allProjects = content.data.projects.edges
 
   // create the individual post pages
   allPosts.forEach(({ node }) => {
@@ -62,6 +76,20 @@ exports.createPages = async ({ graphql, actions }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/post.js`),
+        context: {
+          // data passed to context is available in page queries as GraphQL variables
+          slug: node.fields.slug,
+        },
+      })
+    }
+  })
+
+  //create individual project page
+  allProjects.forEach(({ node }) => {
+    if (node.frontmatter.published) {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/project.js`),
         context: {
           // data passed to context is available in page queries as GraphQL variables
           slug: node.fields.slug,
