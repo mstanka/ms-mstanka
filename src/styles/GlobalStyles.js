@@ -122,5 +122,6 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     font-family: 'Merienda One', cursive;
     transition: all 0.5s ease;
+    color: ${props => props.theme.colors.textSecond};
   }
 `

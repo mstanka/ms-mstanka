@@ -2,6 +2,7 @@ import styled, { css } from "styled-components"
 
 export const CardWrapper = styled.div`
   display: flex;
+  align-items: center;
   min-height: 150px;
   margin-bottom: 40px;
 `
@@ -9,7 +10,7 @@ export const CardWrapper = styled.div`
 export const ImgWrapper = styled.div`
   display: none;
   width: 150px;
-  margin: 0 20px 0 0;
+  margin: 0 3rem 0 0;
 
   img {
     border-radius: 10px;

@@ -1,30 +1,71 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import WebDevImage from "images/undraw_web_dev.svg"
 
 import {
-  Wrapper,  
+  Wrapper,
   HeroName,
   HeroTitle,
   HeroImageWrapper,
   HeroText,
 } from "./HomeIntro.styles"
 
-const HomeIntro = () => (
-  <Wrapper>
-    <HeroName> Marketa Stankova</HeroName>
-    <HeroTitle>Web Developer and Designer</HeroTitle>
-    <HeroImageWrapper>
-      <img src={WebDevImage} alt="Web Development" />
-    </HeroImageWrapper>
-    <HeroText>
-      I build modern responsive websites using{" "}
-      <a href="https://jamstack.org/">JAMstack</a> approach. After several
-      websites built on Wordpress, I found excitement in using HTML/CSS and
-      Javascript's frameworks. I learn about programming in general, about UI/UX
-      design, cloud technologies, and other interesting topics.
-    </HeroText>
-  </Wrapper>
-)
+const HomeIntro = () => {
+  const data = useStaticQuery(graphql`
+    query HomeIntroQuery {
+      markdownRemark(frontmatter: { type: { eq: "about" } }) {
+        frontmatter {
+          title
+          subtitle
+        }
+        html
+      }
+    }
+  `)
+
+  return (
+    <Wrapper>
+      <HeroName>{data.markdownRemark.frontmatter.title}</HeroName>
+      <HeroTitle>{data.markdownRemark.frontmatter.subtitle}</HeroTitle>
+      <HeroImageWrapper>
+        <img src={WebDevImage} alt="Web Development" />
+      </HeroImageWrapper>
+      <HeroText
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      />
+    </Wrapper>
+  )
+}
 
 export default HomeIntro
+
+////// with StaticQuery ///////
+
+// const HomeIntro = () => (
+//   <StaticQuery
+//     query={graphql`
+//       query HomeIntroQuery {
+//         markdownRemark(frontmatter: { type: { eq: "about" } }) {
+//           frontmatter {
+//             title
+//             subtitle
+//           }
+//           html
+//         }
+//       }
+//     `}
+//     render={data => (
+//       <Wrapper>
+//         <HeroName>{data.markdownRemark.frontmatter.title}</HeroName>
+//         <HeroTitle>{data.markdownRemark.frontmatter.subtitle}</HeroTitle>
+//         <HeroImageWrapper>
+//            <img src={WebDevImage} alt="Web Development" />
+//         </HeroImageWrapper>
+//         <HeroText
+//           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+//         />
+//       </Wrapper>
+//     )}
+//   />
+// )
