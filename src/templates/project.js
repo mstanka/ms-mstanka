@@ -9,6 +9,7 @@ import LeftIcon from "images/arrow-left.svg"
 import Preview from "images/eye-outline.svg"
 import Github from "images/logo-github.svg"
 
+
 const Project = ({ data }) => {
   const project = data.markdownRemark
 
