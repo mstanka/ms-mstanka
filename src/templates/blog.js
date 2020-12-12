@@ -8,11 +8,11 @@ import PageNavigation from "components/PageNavigation/PageNavigation"
 
 const BlogPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
-  
+
   return (
     <Layout>
       <SEO title="Blog" />
-     
+
       <main>
         <PageNavigation
           currentPage={pageContext.currentPage}

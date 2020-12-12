@@ -1,9 +1,14 @@
 ---
 type: "project"
-title: "Project 2"
+title: "CAPTURED"
+subtitle: "HTML, CSS/Sass, JavaScript"
 date: "2020-10-10"
-image: "../../images/blog-img-001.jpg"
+image: "../../images/project_undraw_product_photography.jpg"
+preview: "https://chingu-voyages.github.io/v19-solo-mstanka/"
+github: "https://github.com/chingu-voyages/v19-solo-mstanka"
 published: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ultrices tellus. Mauris eget elementum mi. Suspendisse non neque ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dui neque, tincidunt a vestibulum a, dictum quis magna. Nulla consequat tincidunt arcu, non porta ligula sagittis eget. Aliquam erat volutpat. Fusce nibh elit, gravida quis justo sit amet, cursus auctor ligula.
+Captured is a project for Chingu Voyage 19 called Photography Studio landing page. The design of the pages is inspired by a template layout and adjusted to my purposes.
+
+It is a responsive static page, mobile-first, with a multipage layout. It is built using HTML & CSS/Sass, BEM with Grid & Flexbox. For the contact form, I used Javascript validation.

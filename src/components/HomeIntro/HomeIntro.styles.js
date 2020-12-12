@@ -10,6 +10,7 @@ export const Wrapper = styled.section`
   text-align: center;
   background-color: ${colors.lightColor};
   color: ${colors.darkColor};
+  border: 1px solid ${colors.primColor};
   padding-top: 2rem;
   padding-bottom: 5rem;
   margin: 0;

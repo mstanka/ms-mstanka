@@ -112,7 +112,7 @@ export const GlobalStyles = createGlobalStyle`
   h3 {
       font-size: .8rem;
       letter-spacing: 1.5px;
-      margin: 30px 0 -15px 0;
+      margin: 10px 0 0 0;
       @media screen and (min-width: 768px) {
         font-size: 1.2rem;
       }

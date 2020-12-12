@@ -8,17 +8,21 @@ import {
   ImgWrapper,
   TextWrapper,
   Title,
+  Subtitle,
 } from "./ProjectCard.styles"
 
-const ProjectCard = ({ slug, title, excerpt, image }) => (
+const ProjectCard = ({ slug, title, subtitle, excerpt, image }) => (
   <CardWrapper>
-    <ImgWrapper>
-      <Img fluid={image} />
-    </ImgWrapper>
+    <Link to={slug}>
+      <ImgWrapper>
+        <Img fluid={image} />
+      </ImgWrapper>
+    </Link>
     <TextWrapper>
       <Link to={slug}>
         <Title>{title}</Title>
       </Link>
+      <Subtitle>{subtitle}</Subtitle>
       <p>{excerpt}</p>
     </TextWrapper>
   </CardWrapper>

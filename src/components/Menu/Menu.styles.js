@@ -4,7 +4,7 @@ export const Nav = styled.ul`
   display: none;
   list-style-type: none;
   padding: 0;
-  font-family: "Merienda One", cursive;
+  /* font-family: "Merienda One", cursive; */
   font-size: 1.4rem;
 
   a {
@@ -16,6 +16,7 @@ export const Nav = styled.ul`
   li {
     display: inline-block;
     margin-right: 1rem;
+    border: 2px dotted transparent;
     text-transform: uppercase;
     transition: all 0.5s ease;
 
@@ -27,7 +28,7 @@ export const Nav = styled.ul`
       margin-right: 0;
     }
 
-    :hover {     
+    :hover {
       border: 2px dotted ${props => props.theme.colors.textSecond};
     }
   }

@@ -6,6 +6,8 @@ import Image from "components/Image/Image"
 import SEO from "components/SEO/SEO"
 // Icons
 import LeftIcon from "images/arrow-left.svg"
+import Preview from "images/eye-outline.svg"
+import Github from "images/logo-github.svg"
 
 const Project = ({ data }) => {
   const project = data.markdownRemark
@@ -13,10 +15,49 @@ const Project = ({ data }) => {
   return (
     <Layout>
       <SEO title={project.frontmatter.title} />
-      <Image fluid={project.frontmatter.image.childImageSharp.fluid} />
-      <main>       
+      <Image
+        fluid={project.frontmatter.image.childImageSharp.fluid}
+        style={{ objectFit: "cover" }}
+      />
+      <main>
         <h2>{project.frontmatter.title}</h2>
+        <h3>{project.frontmatter.subtitle}</h3>
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
+        <div
+          style={{
+            maxWidth: "200px",
+            margin: "3rem auto",
+            display: "flex",
+            justifyContent: "space-around",
+            alignItems: "center",
+          }}
+        >
+          <a
+            href={project.frontmatter.preview}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <input
+              type="image"
+              alt="Preview"
+              src={Preview}
+              style={{ width: "4rem", height: "4rem" }}
+            />
+          </a>
+          <a
+            href={project.frontmatter.github}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <input
+              type="image"
+              alt="Github"
+              src={Github}
+              style={{ width: "4rem", height: "3rem" }}
+            />
+          </a>
+        </div>
+
         <Link to={`/projects`}>
           <input
             type="image"
@@ -38,10 +79,13 @@ export const query = graphql`
       html
       frontmatter {
         title
+        subtitle
+        preview
+        github
         date(formatString: "MMMM, YYYY", locale: "us")
         image {
           childImageSharp {
-            fluid(maxWidth: 2000, maxHeight: 1000) {
+            fluid(maxWidth: 1000, maxHeight: 700) {
               ...GatsbyImageSharpFluid
             }
           }

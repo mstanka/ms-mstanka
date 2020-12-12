@@ -18,6 +18,7 @@ const ProjectPage = ({ data }) => {
               key={node.fields.slug}
               slug={node.fields.slug}
               title={node.frontmatter.title}
+              subtitle={node.frontmatter.subtitle}
               date={node.frontmatter.date}
               excerpt={node.excerpt}
               image={node.frontmatter.image.childImageSharp.fluid}
@@ -37,6 +38,7 @@ export const projectQuery = graphql`
       filter: {
         frontmatter: { type: { eq: "project" }, published: { eq: true } }
       }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {
@@ -46,9 +48,10 @@ export const projectQuery = graphql`
           frontmatter {
             date(formatString: "MMMM, YYYY", locale: "us")
             title
+            subtitle
             image {
               childImageSharp {
-                fluid(maxWidth: 200, maxHeight: 200) {
+                fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid
                 }
               }

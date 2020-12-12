@@ -15,9 +15,10 @@ export const CardWrapper = styled.div`
 `
 
 export const ImgWrapper = styled.div`
+  display: none;
   width: 400px;
   margin: 0 20px;
-
+  
   img {
     border-radius: 10px;
   }
@@ -34,6 +35,12 @@ export const Title = styled.h2`
   @media screen and (min-width: 768px) {
     padding-top: 0;
   }
+`
+
+export const Subtitle = styled.h3`
+  color: ${props => props.theme.colors.textQuat};
+  padding-bottom: 1rem;
+  margin-top: .5rem;
 `
 
 export const TextWrapper = styled.div`

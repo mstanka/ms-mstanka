@@ -29,7 +29,7 @@ export const Nav = styled.ul`
   top: 100px;
   list-style-type: none;
   padding: 0 2rem;
-  font-family: "Merienda One", cursive;
+  /* font-family: "Merienda One", cursive; */
   font-size: 1.2rem;
   background: ${props => props.theme.colors.headerBG};
   transition: all 0.5s ease;
