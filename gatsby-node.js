@@ -132,8 +132,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"],
-      extensions: ['.js', '.jsx']
+      modules: [path.resolve(__dirname, "src"), "node_modules"]
     },
   })
 }
