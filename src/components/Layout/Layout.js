@@ -6,8 +6,8 @@ import PropTypes from "prop-types"
 import { useMetaDataQuery } from "hooks/useMetaDataQuery"
 
 // components
-import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
+import Header from "components/Header/Header"
 
 // context
 import { ModeContext } from "context/ModeProvider"
