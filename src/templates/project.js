@@ -9,7 +9,6 @@ import LeftIcon from "images/arrow-left.svg"
 import Preview from "images/eye-outline.svg"
 import Github from "images/logo-github.svg"
 
-
 const Project = ({ data }) => {
   const project = data.markdownRemark
 
@@ -61,16 +60,14 @@ const Project = ({ data }) => {
 
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
 
-        <div style={{ paddingTop: "15rem" }}>
-          <Link to={`/projects`}>
-            <input
-              type="image"
-              alt="left-nav"
-              src={LeftIcon}
-              style={{ width: "40px", height: "40px" }}
-            />
-          </Link>
-        </div>
+        <Link to={`/projects`}>
+          <input
+            type="image"
+            alt="left-nav"
+            src={LeftIcon}
+            style={{ width: "30px", height: "30px" }}
+          />
+        </Link>
       </main>
     </Layout>
   )
