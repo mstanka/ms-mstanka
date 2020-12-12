@@ -20,9 +20,9 @@ const Project = ({ data }) => {
         style={{ objectFit: "cover" }}
       />
       <main>
-        <h2>{project.frontmatter.title}</h2>
-        <h3>{project.frontmatter.subtitle}</h3>
-        <div dangerouslySetInnerHTML={{ __html: project.html }} />
+        <h2 style={{ textAlign: "center" }}>{project.frontmatter.title}</h2>
+        <h3 style={{ textAlign: "center" }}>{project.frontmatter.subtitle}</h3>
+
         <div
           style={{
             maxWidth: "200px",
@@ -58,14 +58,18 @@ const Project = ({ data }) => {
           </a>
         </div>
 
-        <Link to={`/projects`}>
-          <input
-            type="image"
-            alt="left-nav"
-            src={LeftIcon}
-            style={{ width: "30px", height: "30px" }}
-          />
-        </Link>
+        <div dangerouslySetInnerHTML={{ __html: project.html }} />
+
+        <div style={{ paddingTop: "15rem" }}>
+          <Link to={`/projects`}>
+            <input
+              type="image"
+              alt="left-nav"
+              src={LeftIcon}
+              style={{ width: "40px", height: "40px" }}
+            />
+          </Link>
+        </div>
       </main>
     </Layout>
   )
