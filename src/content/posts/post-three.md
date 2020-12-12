@@ -1,25 +1,37 @@
 ---
 type: "post"
-title: "My Third Markdown Post"
-date: "2020-10-05"
-image: "../../images/blog-img-001.jpg"
+title: "My experience with Gatsby and TinaCMS"
+date: "2020-09-05"
+image: "../../images/post_undraw_proud_coder.jpg"
 published: true
 ---
 
-Hello, this is my third post made using Markdown.
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ultrices tellus. Mauris eget elementum mi. Suspendisse non neque ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dui neque, tincidunt a vestibulum a, dictum quis magna. Nulla consequat tincidunt arcu, non porta ligula sagittis eget. Aliquam erat volutpat. Fusce nibh elit, gravida quis justo sit amet, cursus auctor ligula.
+I listened to the podcast [Software Engineering Daily](https://softwareengineeringdaily.com/2020/04/30/jamstack-content-management-with-scott-gallant-jordan-patterson-and-nolan-phillips/), where I heard about TinaCMS.
 
-In vestibulum massa quis luctus mollis. Sed ante ante, rhoncus et lacus sit amet, lacinia tempus mauris. Fusce elit odio, euismod sed elementum consectetur, pulvinar ac dolor. Sed elementum justo mi, a hendrerit dolor feugiat at. Cras eu ultrices massa. Morbi ac lacus ullamcorper, maximus lectus non, blandit urna. Mauris tincidunt sed ante vitae scelerisque. Donec in rutrum augue. Etiam imperdiet pharetra turpis, et venenatis massa tristique ullamcorper. In pharetra ultricies justo sed tincidunt.
+In the past, I used WordPress for building my websites. WordPress is the most widely used Content Management System (CMS)written in PHP.
 
-Duis hendrerit justo felis, quis semper arcu ullamcorper accumsan. Etiam aliquam orci a sagittis accumsan. Proin ut elementum tortor. Suspendisse non urna in erat malesuada efficitur quis vel enim. Fusce nibh odio, euismod vitae ullamcorper ut, fringilla in metus. Pellentesque cursus et arcu et pharetra. Praesent molestie vulputate sapien non viverra. Aenean consequat sit amet mauris ut feugiat. Etiam lacinia nunc vitae mi finibus, sit amet sagittis ligula venenatis. Phasellus pellentesque gravida porta. Nulla feugiat, velit eu tristique ultricies, lorem odio dictum dui, ultricies sagittis turpis ligula non elit. Nunc condimentum egestas libero, id volutpat erat tincidunt vitae. Sed et euismod nisl, nec consequat libero. Vivamus pellentesque placerat massa vitae euismod.
+However, as the future trend of web development seems to go towards JAMstack, I was interested in learning what TinaCMS is.
 
-Mauris non ultrices mi, a pellentesque leo. Ut non efficitur urna. Sed quis neque at nisl elementum congue a euismod nunc. Quisque porttitor metus vel urna semper, vitae lacinia metus lacinia. Nunc eget sagittis ipsum, vitae accumsan ipsum. Curabitur vulputate, risus quis commodo euismod, mi massa varius magna, vehicula dictum massa urna ut risus. Nunc maximus ipsum in auctor pharetra. Vestibulum ultrices lorem eu quam tempus bibendum.
+JAM stands for JavaScript, APIs, and Markup.
 
-```javascript
-function hello() {
-  console.log("Hello");
-}
-```
+*> It’s a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and better developer experience.*
 
-Mauris non ultrices mi, a pellentesque leo. Ut non efficitur urna. Sed quis neque at nisl elementum congue a euismod nunc. Quisque porttitor metus vel urna semper, vitae lacinia metus lacinia. Nunc eget sagittis ipsum, vitae accumsan ipsum. Curabitur vulputate, risus quis commodo euismod, mi massa varius magna, vehicula dictum massa urna ut risus. Nunc maximus ipsum in auctor pharetra. Vestibulum ultrices lorem eu quam tempus bibendum.
+TinaCMS is an acronym for “Tina Is Not A CMS”. It is a toolkit for content management.
+
+Tina is an open-source site editing toolkit for React-based sites like Gatsby & Next.js. Using it you can manage content on your site directly, not on another platform. You can open the sidebar, edit your site and watch the content updating in real-time.
+
+I was curious so I used a [starter template](https://github.com/tinacms/tina-starter-grande) to explore more.
+
+The starter offers following features
+
+- Fully integrated with TinaCMS for easy editing
+- Blocks based page & form builder
+- Styled Components
+- Code syntax highlighting
+- Light/Dark mode
+
+You can check my [live project demo](https://ms-gatsby-tinacms.vercel.app/) or [code](https://github.com/mstanka/ms-gatsby-tinacms).
+
+I liked the experience. The site quickly loaded pages and the editing feature on the sidebar is pretty straightforward.

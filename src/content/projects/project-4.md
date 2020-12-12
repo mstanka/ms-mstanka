@@ -9,6 +9,8 @@ github: "https://github.com/mstanka/ms-react-rmdb"
 published: true
 ---
 
+---
+
 Movie DB is a project built following a tutorial on Udemy by Thomas Weibenfalk. It uses Create-React-App and fetches data from The Movie DB API.
 
 I extended the tutorial to display data also for each actor on a separate page.

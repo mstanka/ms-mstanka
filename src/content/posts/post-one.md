@@ -1,25 +1,25 @@
 ---
 type: "post"
-title: "My First Markdown Post"
-date: "2020-10-02"
-image: "../../images/blog-img-001.jpg"
+title: "My first front-end challenge"
+date: "2019-08-27"
+image: "../../images/post_firstFMchallenge.jpg"
 published: true
 ---
 
-Hello, this is my first post made using Markdown.
+---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ultrices tellus. Mauris eget elementum mi. Suspendisse non neque ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce dui neque, tincidunt a vestibulum a, dictum quis magna. Nulla consequat tincidunt arcu, non porta ligula sagittis eget. Aliquam erat volutpat. Fusce nibh elit, gravida quis justo sit amet, cursus auctor ligula.
+I completed my first front-end challenge!! I’m excited about it because I found it a fun project. I was completely absorbed in it for several days, and what’s important, I learned a lot of new things.
 
-In vestibulum massa quis luctus mollis. Sed ante ante, rhoncus et lacus sit amet, lacinia tempus mauris. Fusce elit odio, euismod sed elementum consectetur, pulvinar ac dolor. Sed elementum justo mi, a hendrerit dolor feugiat at. Cras eu ultrices massa. Morbi ac lacus ullamcorper, maximus lectus non, blandit urna. Mauris tincidunt sed ante vitae scelerisque. Donec in rutrum augue. Etiam imperdiet pharetra turpis, et venenatis massa tristique ullamcorper. In pharetra ultricies justo sed tincidunt.
+The challenge was offered by [Frontend Mentor](https://www.frontendmentor.io/) and the task was to build a landing page based on the design for desktop and mobile. On the platform, they provided you also with a starter code and a style guide. There is no time limit for you, so you can start whenever you want. Just download it and go ahead.
 
-Duis hendrerit justo felis, quis semper arcu ullamcorper accumsan. Etiam aliquam orci a sagittis accumsan. Proin ut elementum tortor. Suspendisse non urna in erat malesuada efficitur quis vel enim. Fusce nibh odio, euismod vitae ullamcorper ut, fringilla in metus. Pellentesque cursus et arcu et pharetra. Praesent molestie vulputate sapien non viverra. Aenean consequat sit amet mauris ut feugiat. Etiam lacinia nunc vitae mi finibus, sit amet sagittis ligula venenatis. Phasellus pellentesque gravida porta. Nulla feugiat, velit eu tristique ultricies, lorem odio dictum dui, ultricies sagittis turpis ligula non elit. Nunc condimentum egestas libero, id volutpat erat tincidunt vitae. Sed et euismod nisl, nec consequat libero. Vivamus pellentesque placerat massa vitae euismod.
+I decided on [Huddle landing page with alternating feature blocks](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). The decision was easy because I didn’t notice that there were more possibilities to chose from, and this one was for beginners. So I went straight into it.
 
-Mauris non ultrices mi, a pellentesque leo. Ut non efficitur urna. Sed quis neque at nisl elementum congue a euismod nunc. Quisque porttitor metus vel urna semper, vitae lacinia metus lacinia. Nunc eget sagittis ipsum, vitae accumsan ipsum. Curabitur vulputate, risus quis commodo euismod, mi massa varius magna, vehicula dictum massa urna ut risus. Nunc maximus ipsum in auctor pharetra. Vestibulum ultrices lorem eu quam tempus bibendum.
+I downloaded the starter code and read through the instructions for coding. After that I continued with the instructions on how to use GitHub and how to create a repository there. At that time I wasn’t familiar with GitHub.
 
-```javascript
-function hello() {
-  console.log("Hello");
-}
-```
+I created [my repository](https://github.com/mstanka/huddle-landing-page) and wrote my code from scratch using HTML and CSS. For layout, I decided on Flexbox and I have to admit that nested Flexbox was a challenge to me.
 
-Mauris non ultrices mi, a pellentesque leo. Ut non efficitur urna. Sed quis neque at nisl elementum congue a euismod nunc. Quisque porttitor metus vel urna semper, vitae lacinia metus lacinia. Nunc eget sagittis ipsum, vitae accumsan ipsum. Curabitur vulputate, risus quis commodo euismod, mi massa varius magna, vehicula dictum massa urna ut risus. Nunc maximus ipsum in auctor pharetra. Vestibulum ultrices lorem eu quam tempus bibendum.
+With nested Flexbox, I had to think out and correctly apply styles for containers and items. Suddenly an item became a new container and styles for the container should be used on the item. I draw schemas and watched the Wes Bos tutorial [What the Flexbox](https://flexbox.io/) to understand what should apply where.
+
+I had to figure out more issues, e.g. how to use vector image and how to style it. Because of the footer, I needed to change the colored logo to the white logo to use it on the black background. And the button calling for action was also a good one…
+
+Finally, it was a short code, but I rewrote it several times. I’m not still completely satisfied with some parts, however, I decided to move on and deployed my solution on [GitHub Pages](https://mstanka.github.io/huddle-landing-page/) and call it finished.
