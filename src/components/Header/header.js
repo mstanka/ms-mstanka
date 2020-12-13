@@ -16,9 +16,9 @@ import { ModeContext } from "context/ModeProvider"
 // styles
 import { HeaderWrapper, Logo } from "components/Header/Header.styles"
 
-const Header = ({ siteTitle = `` }) => {
+const Header = ({ siteTitle }) => {
   const siteConfig = useSiteConfigQuery()
-  const [darkMode, setDarkMode ] = useContext(ModeContext)
+  const [darkMode, setDarkMode] = useContext(ModeContext)
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (

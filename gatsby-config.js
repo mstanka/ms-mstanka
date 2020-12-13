@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Project`,
-    description: `Gatsby project bootstrapped with default Gatsby starter.`,
+    title: `Marketa Stankova`,
+    description: `Portfolio and Blog Gatsby project bootstrapped with default Gatsby starter.`,
     author: `@mstanka`,
   },
   plugins: [
