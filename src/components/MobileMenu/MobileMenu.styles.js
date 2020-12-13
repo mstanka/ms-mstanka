@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components"
+import { colors } from "styles/GlobalStyles"
 
 export const OverrideGlobalStyle = createGlobalStyle`
   body {
@@ -35,7 +36,7 @@ export const Nav = styled.ul`
   transition: all 0.5s ease;
 
   a {
-    color: ${props => props.theme.colors.textSecond};
+    color: ${colors.darkColor};
     display: inline-block;
   }
 
@@ -47,7 +48,7 @@ export const Nav = styled.ul`
     .active {
       font-weight: bold;
     }
-    
+
     :hover {
       border: 2px dotted ${props => props.theme.colors.textSecond};
     }

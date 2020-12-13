@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { colors } from "styles/GlobalStyles"
 
 export const Nav = styled.ul`
   display: none;
@@ -8,7 +9,7 @@ export const Nav = styled.ul`
   font-size: 1.4rem;
 
   a {
-    color: ${props => props.theme.colors.textSecond};
+    color: ${colors.darkColor};
     display: inline-block;
     padding: 1rem;
   }

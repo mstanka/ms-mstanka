@@ -3,23 +3,24 @@ import MeriendaOneRegular from "fonts/MeriendaOne-Regular.ttf"
 import RobotoRegular from "fonts/Roboto-Regular.ttf"
 
 export const colors = {
-  primColor: "#FF552A",
-  secondColor: "#802A14",
-  tertColor: "#51d25d",
-  quatColor: "#2e7234",
-  darkColor: "#213548",
-  lightColor: "#f0f0f0",
+  primColor: "#8b0101",
+  secondColor: "#FF552A",
+  tertColor: "#34cb43",
+  quatColor: "#7f8091",
+  darkColor: "#0f0e17",
+  lightColor: "#fffffe",
 }
 
 export const lightTheme = {
   colors: {
     mainBG: colors.darkColor,
-    headerBG: colors.primColor,
+    headerBG: colors.secondColor,
     cardBG: colors.secondColor,
     proBG: colors.lightColor,
     text: colors.darkColor,
     textSecond: colors.tertColor,
     textQuat: colors.quatColor,
+    link: colors.secondColor,
   },
 }
 
@@ -32,6 +33,7 @@ export const darkTheme = {
     text: colors.lightColor,
     textSecond: colors.primColor,
     textQuat: colors.tertColor,
+    link: colors.secondColor,
   },
 }
 
@@ -122,6 +124,6 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     font-family: 'Merienda One', cursive;
     transition: all 0.5s ease;
-    color: ${props => props.theme.colors.textSecond};
+    color: ${props => props.theme.colors.link};
   }
 `
