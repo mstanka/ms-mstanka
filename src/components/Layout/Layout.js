@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
-      <Header siteTitle={`Title` || data.title } />
+      <Header siteTitle={ data.title } />
 
       <main>{children}</main>
       <Footer />

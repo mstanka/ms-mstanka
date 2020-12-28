@@ -3,11 +3,14 @@ import styled from "styled-components"
 export const CardWrapper = styled.div`
   display: flex;
   min-height: 150px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 6rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  border: 1px solid ${props => props.theme.colors.textQuat};
+  border-radius: 10px;
+  padding: 2rem 1rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -15,7 +18,8 @@ export const CardWrapper = styled.div`
 `
 
 export const ImgWrapper = styled.div`
-  width: 350px;
+  width: 70vw;
+  max-width: 300px;
   margin: 0 20px;
 
   img {
