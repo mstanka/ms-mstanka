@@ -14,7 +14,7 @@ import ModeButton from "components/ModeButton/ModeButton"
 import { ModeContext } from "context/ModeProvider"
 
 // styles
-import { HeaderWrapper, Logo } from "components/Header/Header.styles"
+import { HeaderWrapper, Logo } from "./Header.styles"
 
 const Header = ({ siteTitle }) => {
   const siteConfig = useSiteConfigQuery()
