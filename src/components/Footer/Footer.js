@@ -1,10 +1,10 @@
 import React from "react"
 
 // hooks
-import { useMetaDataQuery } from "hooks/useMetaDataQuery"
+import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
 // styles
-import { Wrapper } from "./Footer.styles.js"
+import { Wrapper } from "./Footer.styles"
 
 const Footer = () => {
   const data = useMetaDataQuery()

@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 // Components
-import Layout from "components/Layout/Layout"
-import SEO from "components/SEO/SEO"
-import ProjectCard from "components/ProjectCard/ProjectCard"
+import Layout from "../components/Layout/Layout"
+import SEO from "../components/SEO/SEO"
+import ProjectCard from "../components/ProjectCard/ProjectCard"
 
 const ProjectPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges

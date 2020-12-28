@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import WebDevImage from "images/undraw_web_dev.svg"
+import WebDevImage from "../../images/undraw_web_dev.svg"
 
 import {
   Wrapper,

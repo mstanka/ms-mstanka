@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
-import MeriendaOneRegular from "fonts/MeriendaOne-Regular.ttf"
-import RobotoRegular from "fonts/Roboto-Regular.ttf"
+import MeriendaOneRegular from "../fonts/MeriendaOne-Regular.ttf"
+import RobotoRegular from "../fonts/Roboto-Regular.ttf"
 
 export const colors = {
   primColor: "#8b0101",

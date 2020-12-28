@@ -2,8 +2,8 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 // Icons
-import DateIcon from "images/calendar.svg"
-import TimeIcon from "images/watch.svg"
+import DateIcon from "../../images/calendar.svg"
+import TimeIcon from "../../images/watch.svg"
 // Styles
 import {
   CardWrapper,

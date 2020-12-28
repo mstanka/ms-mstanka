@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 // Components
-import Layout from "components/Layout/Layout"
-import Image from "components/Image/Image"
-import SEO from "components/SEO/SEO"
+import Layout from "../components/Layout/Layout"
+import Image from "../components/Image/Image"
+import SEO from "../components/SEO/SEO"
 // Icons
-import LeftIcon from "images/arrow-left.svg"
+import LeftIcon from "../images/arrow-left.svg"
 
 const Post = ({ data }) => {
   const post = data.markdownRemark

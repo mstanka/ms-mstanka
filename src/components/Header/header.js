@@ -2,16 +2,16 @@ import React, { useState, useContext } from "react"
 import { Link } from "gatsby"
 
 // hooks
-import { useSiteConfigQuery } from "hooks/useSiteConfigQuery"
+import { useSiteConfigQuery } from "../../hooks/useSiteConfigQuery"
 
 // componenents
-import Menu from "components/Menu/Menu"
-import Hamburger from "components/Hamburger/Hamburger"
-import MobileMenu from "components/MobileMenu/MobileMenu"
-import ModeButton from "components/ModeButton/ModeButton"
+import Menu from "../Menu/Menu"
+import Hamburger from "../Hamburger/Hamburger"
+import MobileMenu from "../MobileMenu/MobileMenu"
+import ModeButton from "../ModeButton/ModeButton"
 
 // context
-import { ModeContext } from "context/ModeProvider"
+import { ModeContext } from "../../context/ModeProvider"
 
 // styles
 import { HeaderWrapper, Logo } from "./Header.styles"

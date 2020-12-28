@@ -1,13 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 // Components
-import Layout from "components/Layout/Layout"
-import Image from "components/Image/Image"
-import SEO from "components/SEO/SEO"
+import Layout from "../components/Layout/Layout"
+import Image from "../components/Image/Image"
+import SEO from "../components/SEO/SEO"
 // Icons
-import LeftIcon from "images/arrow-left.svg"
-import Preview from "images/eye-outline.svg"
-import Github from "images/logo-github.svg"
+import LeftIcon from "../images/arrow-left.svg"
+import Preview from "../images/eye-outline.svg"
+import Github from "../images/logo-github.svg"
 
 const Project = ({ data }) => {
   const project = data.markdownRemark

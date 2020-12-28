@@ -1,10 +1,10 @@
 import React from "react"
 
-import ContactImage from "images/undraw_contact.png"
-import Github from "images/logo-github.svg"
-import Twitter from "images/icons8-twitter.svg"
-import Codepen from "images/icons8-codepen.svg"
-import Foto from "images/icons8-500px.svg"
+import ContactImage from "../../images/undraw_contact.png"
+import Github from "../../images/logo-github.svg"
+import Twitter from "../../images/icons8-twitter.svg"
+import Codepen from "../../images/icons8-codepen.svg"
+import Foto from "../../images/icons8-500px.svg"
 
 import { Wrapper, ContactImageWrapper } from "./ContactComp.styles"
 
