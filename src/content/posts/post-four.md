@@ -6,8 +6,6 @@ image: "../../images/post_tinacms.jpg"
 published: true
 ---
 
----
-
 I listened to the podcast [Software Engineering Daily](https://softwareengineeringdaily.com/2020/04/30/jamstack-content-management-with-scott-gallant-jordan-patterson-and-nolan-phillips/), where I heard about TinaCMS.
 
 In the past, I used WordPress for building my websites. WordPress is the most widely used Content Management System (CMS) written in PHP.

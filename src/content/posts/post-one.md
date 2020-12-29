@@ -6,8 +6,6 @@ image: "../../images/post_firstFMchallenge.jpg"
 published: true
 ---
 
----
-
 I completed my first front-end challenge!! I’m excited about it because I found it a fun project. I was completely absorbed in it for several days, and what’s important, I learned a lot of new things.
 
 The challenge was offered by [Frontend Mentor](https://www.frontendmentor.io/) and the task was to build a landing page based on the design for desktop and mobile. On the platform, they provided you also with a starter code and a style guide. There is no time limit for you, so you can start whenever you want. Just download it and go ahead.

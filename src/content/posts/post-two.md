@@ -6,8 +6,6 @@ image: "../../images/post_secondFMchallenge.jpg"
 published: true
 ---
 
----
-
 For my second challenge with [Frontend Mentor](https://beta.frontendmentor.io/), I decided to build a page called [Base Apparel coming soon](https://beta.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). At my first quick look, it seemed to be easy.
 
 However, I found out soon that there are a lot of small details, which needed to be solved with CSS. And besides it, there was an email input for which I needed to write an email validation using JS. I had no idea how to do it.
