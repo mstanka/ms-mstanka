@@ -11,7 +11,25 @@ import MobileMenu from "../MobileMenu"
 import ThemeChanger from "../ThemeChanger"
 
 // styles
-import { HeaderWrapper, Logo } from "./Header.styles"
+import styled from "styled-components"
+
+const HeaderWrapper = styled.header`
+  background: var(--header-bg);
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+`
+
+const Logo = styled.img`
+  max-width: 100px;
+  padding: 3px;
+  border: 1px solid var(--light-color);
+  border-radius: 50%;
+`
 
 const Header = ({ siteTitle }) => {
   const siteConfig = useSiteConfigQuery()  
