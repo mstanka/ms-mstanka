@@ -8,7 +8,7 @@ export const CardWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 1px solid ${props => props.theme.colors.textQuat};
+  border: 1px solid var(--quat-color);
   border-radius: 10px;
   padding: 2rem 1rem;
 
@@ -32,7 +32,7 @@ export const ImgWrapper = styled.div`
 `
 
 export const Title = styled.h2`
-  color: ${props => props.theme.colors.textQuat};
+  color: var(--header-bg);
   padding-top: 2rem;
 
   @media screen and (min-width: 768px) {
@@ -41,7 +41,7 @@ export const Title = styled.h2`
 `
 
 export const Subtitle = styled.h3`
-  color: ${props => props.theme.colors.textQuat};
+  color: var(--quat-color);
   padding-bottom: 1rem;
   margin-top: 0.5rem;
 `

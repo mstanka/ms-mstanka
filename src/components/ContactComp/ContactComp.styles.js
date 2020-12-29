@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
 
 export const Wrapper = styled.section`
   display: flex;
@@ -7,9 +6,9 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: ${colors.lightColor};
-  color: ${colors.darkColor};
-  border: 1px solid ${colors.primColor};
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: 1px solid var(--primary-text-color);
   padding-top: 2rem;
   padding-bottom: 5rem;
   margin: 0;

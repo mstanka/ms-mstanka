@@ -8,12 +8,14 @@ module.exports = {
   siteMetadata: {
     title: `Marketa Stankova`,
     description: `Portfolio and Blog Gatsby project bootstrapped with default Gatsby starter.`,
-    author: `@mstanka`,
+    author: `Marketa Stankova`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -57,8 +59,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Marketa Stankova`,
+        short_name: `Marketa Stankova`,
         start_url: `/`,
         background_color: `#ee5f5b`,
         theme_color: `#ee5f5b`,
@@ -66,16 +68,5 @@ module.exports = {
         icon: `src/images/mstanka.png`, // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.CONTENFUL_SPACE_ID,
-    //     accessToken: process.env.CONTENFUL_ACCESS_TOKEN,
-    //   },
-    // },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

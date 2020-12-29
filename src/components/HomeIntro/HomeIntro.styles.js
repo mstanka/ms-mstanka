@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
-
 
 export const Wrapper = styled.section`
   display: flex;
@@ -8,9 +6,9 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: ${colors.lightColor};
-  color: ${colors.darkColor};
-  border: 1px solid ${colors.primColor};
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: 1px solid var(--primary-text-color);
   padding-top: 2rem;
   padding-bottom: 5rem;
   margin: 0;
@@ -21,16 +19,16 @@ export const Wrapper = styled.section`
 `
 
 export const HeroName = styled.h1`
-  color: ${colors.secondColor};
+  color: var(--secondary-text-color);
 `
 
 export const HeroTitle = styled.h2`
   text-transform: uppercase;
   background-image: linear-gradient(
     to right,
-    ${colors.primColor},
-    ${colors.tertColor},
-    ${colors.primColor}
+    var(--primary-text-color),
+    var(--tertiary-color),
+    var(--primary-text-color)
   );
   background-size: 200%;
   background-position: 400%;
@@ -38,6 +36,7 @@ export const HeroTitle = styled.h2`
   background-clip: text;
   color: transparent;
   animation: gradient 5s linear infinite;
+  padding-bottom: 2rem;
 
   @keyframes gradient {
     0% {
