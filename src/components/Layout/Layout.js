@@ -21,10 +21,10 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <GlobalStyles />
       <Header siteTitle={data.title} />
       <main>{children}</main>
       <Footer />
+      <GlobalStyles />
     </ThemeProvider>
   )
 }
