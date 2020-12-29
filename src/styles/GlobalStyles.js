@@ -44,7 +44,7 @@ export const GlobalStyles = createGlobalStyle`
 
   @font-face {
       font-family: 'Merienda One';
-      src: local('MeriendaOneRegular'), local('MeriendaOneRegular'),
+      src: local('MeriendaOneRegular'), 
         url(${MeriendaOneRegular}) format('ttf');
       font-weight: 400;
       font-style: normal;
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: 'Roboto';
-    src: local('RobotoRegular'), local('RobotoRegular'),
+    src: local('RobotoRegular'), 
       url(${RobotoRegular}) format('ttf');
     font-weight: 400;
     font-style: normal;
@@ -85,6 +85,7 @@ export const GlobalStyles = createGlobalStyle`
   p {
     font-size: 0.9rem;
     line-height: 1.2;
+
     @media screen and (min-width: 768px) {
       font-size: 1.1rem;
       line-height: 1.5;
@@ -96,6 +97,7 @@ export const GlobalStyles = createGlobalStyle`
     letter-spacing: 1.8px;
     text-transform: uppercase;
     margin: 30px 0 -15px 0;
+
     @media screen and (min-width: 768px) {
       font-size: 2.4rem;
     }
@@ -106,6 +108,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.3rem;
     letter-spacing: 1.8px;
     text-transform: uppercase;
+
     @media screen and (min-width: 768px) {
       font-size: 1.8rem;
     }
@@ -115,6 +118,7 @@ export const GlobalStyles = createGlobalStyle`
       font-size: .8rem;
       letter-spacing: 1.5px;
       margin: 10px 0 0 0;
+      
       @media screen and (min-width: 768px) {
         font-size: 1.2rem;
       }
