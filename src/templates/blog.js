@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 // Components
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/SEO/SEO"
-import BlogPostCard from "../components/BlogPostCard/BlogPostCard"
-import PageNavigation from "../components/PageNavigation/PageNavigation"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import BlogPostCard from "../components/BlogPostCard"
+import PageNavigation from "../components/PageNavigation"
 
 const BlogPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges

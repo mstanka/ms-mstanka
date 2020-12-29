@@ -5,8 +5,8 @@ import PropTypes from "prop-types"
 import { useMetaDataQuery } from "../../hooks/useMetaDataQuery"
 
 // components
-import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
+import Footer from "../Footer"
+import Header from "../Header"
 
 // styles
 import "../../styles/global.scss"

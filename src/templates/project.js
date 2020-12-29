@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 // Components
-import Layout from "../components/Layout/Layout"
-import Image from "../components/Image/Image"
-import SEO from "../components/SEO/SEO"
+import Layout from "../components/Layout"
+import Image from "../components/Image"
+import SEO from "../components/SEO"
 // Icons
 import LeftIcon from "../images/arrow-left.svg"
 import Preview from "../images/eye-outline.svg"

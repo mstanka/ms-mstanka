@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 import { useSiteConfigQuery } from "../../hooks/useSiteConfigQuery"
 
 // componenents
-import Menu from "../Menu/Menu"
-import Hamburger from "../Hamburger/Hamburger"
-import MobileMenu from "../MobileMenu/MobileMenu"
-import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import Menu from "../Menu"
+import Hamburger from "../Hamburger"
+import MobileMenu from "../MobileMenu"
+import ThemeChanger from "../ThemeChanger"
 
 // styles
 import { HeaderWrapper, Logo } from "./Header.styles"
