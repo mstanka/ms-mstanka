@@ -9,7 +9,7 @@ export const HamburgerIcon = styled.div`
   :after,
   :before,
   div {
-    background-color: var(--secondary-text-color);
+    background-color: var(--link-color);
     border-radius: 2px;
     content: "";
     display: block;

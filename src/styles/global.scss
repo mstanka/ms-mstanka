@@ -21,6 +21,7 @@ body.light {
   --header-bg: #ff552a;
   --dark-color: "#0f0e17";
   --light-color: "#fffffe";
+  --link-color: #34cb43;
 }
 
 body.dark {
@@ -32,6 +33,7 @@ body.dark {
   --header-bg: #34cb43;
   --dark-color: "#0f0e17";
   --light-color: "#fffffe";
+  --link-color: #db4ddb;
 }
 
 body {
@@ -103,7 +105,7 @@ a {
   text-decoration: none;
   font-family: "Merienda One", cursive;
   transition: all 0.5s ease;
-  color: var(--secondary-text-color);
+  color: var(--link-color);
   cursor: pointer;
 }
 
