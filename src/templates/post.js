@@ -16,15 +16,16 @@ const Post = ({ data }) => {
       <Image fluid={post.frontmatter.image.childImageSharp.fluid} />
       <main>
         <div style={{ paddingBottom: "1rem" }}>{post.frontmatter.date}</div>
-        <h2>{post.frontmatter.title}</h2>
+        <h2 style={{ paddingBottom: "1rem" }}>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Link to={`/blog`}>
           <input
             type="image"
             alt="left-nav"
             src={LeftIcon}
-            style={{ width: "30px", height: "30px" }}
+            style={{ width: "30px", height: "30px", marginTop: "2rem" }}
           />
+          <div>Back to the Posts</div>
         </Link>
       </main>
     </Layout>

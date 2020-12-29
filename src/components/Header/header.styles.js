@@ -1,8 +1,7 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
 
 export const HeaderWrapper = styled.div`
-  background: ${props => props.theme.colors.headerBG};
+  background: var(--header-bg);
   font-size: 1.7rem;
   display: flex;
   justify-content: space-around;
@@ -15,7 +14,7 @@ export const HeaderWrapper = styled.div`
 export const Logo = styled.img`
   max-width: 100px;
   padding: 3px;  
-  border: 1px solid ${colors.lightColor};
+  border: 1px solid var(--light-color);
   border-radius: 50%;
 `
 

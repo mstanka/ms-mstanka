@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat&family=Roboto&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --site-max-width: 1200px;
+}
+
+body.light {
+  --primary-text-color: #181326;
+  --secondary-text-color: #ff552a;
+  --tertiary-color: #34cb43;
+  --quat-color: #7f8091;
+  --background: #fffffe;
+  --header-bg: #ff552a;
+  --dark-color: "#0f0e17";
+  --light-color: "#fffffe";
+}
+
+body.dark {
+  --primary-text-color: #fff;
+  --secondary-text-color: #db4ddb;
+  --tertiary-color: #34cb43;
+  --quat-color: #7f8091;
+  --background: #0a041a;
+  --header-bg: #34cb43;
+  --dark-color: "#0f0e17";
+  --light-color: "#fffffe";
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--primary-text-color);
+  transition: all 0.7s ease-in;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  font-family: "Merienda One", cursive;
+  transition: all 0.5s ease;
+}
+
+h1 {
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.8px;
+  margin: 30px 0 -15px 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  font-size: 1.3rem;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  margin: 10px 0 0 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: "Merienda One", cursive;
+  transition: all 0.5s ease;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+// theme-changer
+.theme-changer {
+  display: none;
+}
+body.dark {
+  .gg-moon {
+    display: none;
+  }
+}
+body.light {
+  .gg-sun {
+    display: none;
+  }
+}
+.mode-container {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+// CSS.gg icons for sun and moon
+.gg-sun {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0)
+      no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px
+      14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px
+      5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+  color: var(--primary-text-color);
+}
+.gg-sun::after,
+.gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+.gg-sun::before {
+  transform: rotate(-45deg);
+}
+.gg-sun::after {
+  transform: rotate(45deg);
+}
+.gg-moon,
+.gg-moon::after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: var(--primary-text-color);
+}
+.gg-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+}
+.gg-moon::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
+}

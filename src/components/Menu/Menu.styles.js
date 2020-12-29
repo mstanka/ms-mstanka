@@ -1,15 +1,13 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
 
 export const Nav = styled.ul`
   display: none;
   list-style-type: none;
   padding: 0;
-  /* font-family: "Merienda One", cursive; */
   font-size: 1.4rem;
 
   a {
-    color: ${colors.darkColor};
+    color: var(--dark-color);
     display: inline-block;
     padding: 1rem;
   }
@@ -30,7 +28,7 @@ export const Nav = styled.ul`
     }
 
     :hover {
-      border: 2px dotted ${props => props.theme.colors.textSecond};
+      border: 2px dotted var(--secondary-text-color);
     }
   }
 

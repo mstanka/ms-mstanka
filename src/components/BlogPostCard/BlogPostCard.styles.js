@@ -4,7 +4,7 @@ export const CardWrapper = styled.div`
   display: flex;
   align-items: center;
   min-height: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 7rem;
 `
 
 export const ImgWrapper = styled.div`
@@ -22,7 +22,7 @@ export const ImgWrapper = styled.div`
 `
 
 export const Title = styled.h2`
-  color: ${props => props.theme.colors.textQuat};
+  color: var(--primary-text-color);
 `
 
 export const TextWrapper = styled.div`

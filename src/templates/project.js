@@ -65,8 +65,9 @@ const Project = ({ data }) => {
             type="image"
             alt="left-nav"
             src={LeftIcon}
-            style={{ width: "30px", height: "30px" }}
+            style={{ width: "30px", height: "30px", marginTop: "2rem" }}
           />
+          <div>Back to the Projects</div>
         </Link>
       </main>
     </Layout>

@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
 
 export const OverrideGlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +11,7 @@ export const Wrapper = styled.div`
   position: fixed;
   left: ${props => (props.menuOpen ? '0px' : '-320px')};
   width: 320px;
-  background: ${props => props.theme.colors.headerBG};
+  background: var(--header-bg);
   top: 0;
   padding: 0;
   transition: all .3s ease;
@@ -30,13 +29,12 @@ export const Nav = styled.ul`
   top: 100px;
   list-style-type: none;
   padding: 0 2rem;
-  /* font-family: "Merienda One", cursive; */
   font-size: 1.2rem;
-  background: ${props => props.theme.colors.headerBG};
+  background: var(--header-bg);
   transition: all 0.5s ease;
 
   a {
-    color: ${colors.darkColor};
+    color: var(--dark-color);
     display: inline-block;
   }
 
@@ -50,7 +48,7 @@ export const Nav = styled.ul`
     }
 
     :hover {
-      border: 2px dotted ${props => props.theme.colors.textSecond};
+      border: 2px dotted var(--secondary-text-color);
     }
   }
 `
