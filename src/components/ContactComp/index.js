@@ -1,10 +1,14 @@
 import React from "react"
 
 import ContactImage from "../../images/undraw_contact.png"
-import Github from "../../images/logo-github.svg"
-import Twitter from "../../images/icons8-twitter.svg"
-import Codepen from "../../images/icons8-codepen.svg"
-import Foto from "../../images/icons8-500px.svg"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faTwitter,
+  fa500px,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 
 import { Wrapper, ContactImageWrapper } from "./ContactComp.styles"
 
@@ -16,6 +20,7 @@ const ContactComp = () => {
       </ContactImageWrapper>
 
       <h2>Contact</h2>
+
       <div
         style={{
           maxWidth: "200px",
@@ -31,10 +36,10 @@ const ContactComp = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <input
-            type="image"
-            src={Github}
-            style={{ width: "4rem", height: "3rem" }}
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="3x"
+            style={{ margin: "0 .5rem" }}
           />
         </a>
 
@@ -44,10 +49,10 @@ const ContactComp = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <input
-            type="image"
-            src={Twitter}
-            style={{ width: "4rem", height: "4rem" }}
+          <FontAwesomeIcon
+            icon={faTwitter}
+            size="3x"
+            style={{ margin: "0 .5rem" }}
           />
         </a>
         <a
@@ -56,10 +61,10 @@ const ContactComp = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <input
-            type="image"
-            src={Foto}
-            style={{ width: "4rem", height: "3rem" }}
+          <FontAwesomeIcon
+            icon={fa500px}
+            size="3x"
+            style={{ margin: "0 .5rem" }}
           />
         </a>
         <a
@@ -68,10 +73,10 @@ const ContactComp = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <input
-            type="image"
-            src={Codepen}
-            style={{ width: "4rem", height: "3rem" }}
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            size="3x"
+            style={{ margin: "0 .5rem" }}
           />
         </a>
       </div>
