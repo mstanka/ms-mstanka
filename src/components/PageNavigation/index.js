@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 // Icons
-import LeftIcon from "../../images/arrow-left.svg"
-import RightIcon from "../../images/arrow-right.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
+} from "@fortawesome/free-solid-svg-icons"
 // Styles
 import {
   PageNavigationWrapper,
@@ -15,7 +18,11 @@ const PageNavigation = ({ currentPage, numPages }) => (
     <ImgWrapper>
       {currentPage > 1 && (
         <Link to={`/blog/${currentPage === 2 ? "" : currentPage - 1}`}>
-          <input type="image" alt="left-nav" src={LeftIcon} />
+          <FontAwesomeIcon
+            icon={faArrowCircleLeft}
+            size="2x"
+            color="var(--quat-color)"
+          />
         </Link>
       )}
     </ImgWrapper>
@@ -27,7 +34,11 @@ const PageNavigation = ({ currentPage, numPages }) => (
     <ImgWrapper>
       {currentPage !== numPages && (
         <Link to={`/blog/${currentPage + 1}`}>
-          <input type="image" alt="right-nav" src={RightIcon} />
+          <FontAwesomeIcon
+            icon={faArrowCircleRight}
+            size="2x"
+            color="var(--quat-color)"
+          />
         </Link>
       )}
     </ImgWrapper>

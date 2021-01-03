@@ -5,7 +5,8 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/SEO"
 // Icons
-import LeftIcon from "../images/arrow-left.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowCircleLeft } from "@fortawesome/free-solid-svg-icons"
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -19,13 +20,13 @@ const Post = ({ data }) => {
         <h2 style={{ paddingBottom: "1rem" }}>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Link to={`/blog`}>
-          <input
-            type="image"
-            alt="left-nav"
-            src={LeftIcon}
-            style={{ width: "30px", height: "30px", marginTop: "2rem" }}
-          />
-          <div>Back to the Posts</div>
+          <FontAwesomeIcon
+            icon={faArrowCircleLeft}
+            size="2x"
+            color="var(--quat-color)"
+            style={{ marginRight: ".5rem", marginTop: "2rem" }}
+          />          
+          <span>Back to the Posts</span>
         </Link>
       </main>
     </Layout>

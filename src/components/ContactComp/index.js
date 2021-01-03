@@ -7,7 +7,7 @@ import {
   faGithub,
   faTwitter,
   fa500px,
-  faLinkedin,
+  faCodepen,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Wrapper, ContactImageWrapper } from "./ContactComp.styles"
@@ -24,7 +24,7 @@ const ContactComp = () => {
       <div
         style={{
           maxWidth: "200px",
-          margin: "1rem auto",
+          margin: "2rem auto",
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
@@ -39,6 +39,7 @@ const ContactComp = () => {
           <FontAwesomeIcon
             icon={faGithub}
             size="3x"
+            color="var(--quat-color)"
             style={{ margin: "0 .5rem" }}
           />
         </a>
@@ -52,6 +53,7 @@ const ContactComp = () => {
           <FontAwesomeIcon
             icon={faTwitter}
             size="3x"
+            color="var(--quat-color)"
             style={{ margin: "0 .5rem" }}
           />
         </a>
@@ -64,6 +66,7 @@ const ContactComp = () => {
           <FontAwesomeIcon
             icon={fa500px}
             size="3x"
+            color="var(--quat-color)"
             style={{ margin: "0 .5rem" }}
           />
         </a>
@@ -74,8 +77,9 @@ const ContactComp = () => {
           rel="noreferrer noopener"
         >
           <FontAwesomeIcon
-            icon={faLinkedin}
+            icon={faCodepen}
             size="3x"
+            color="var(--quat-color)"
             style={{ margin: "0 .5rem" }}
           />
         </a>

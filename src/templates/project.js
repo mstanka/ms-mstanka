@@ -5,9 +5,9 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/SEO"
 // Icons
-import LeftIcon from "../images/arrow-left.svg"
-import Preview from "../images/eye-outline.svg"
-import Github from "../images/logo-github.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowCircleLeft, faEye } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Project = ({ data }) => {
   const project = data.markdownRemark
@@ -38,11 +38,7 @@ const Project = ({ data }) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <input
-              type="image"
-              src={Preview}
-              style={{ width: "4rem", height: "4rem" }}
-            />
+            <FontAwesomeIcon icon={faEye} size="3x" color="var(--quat-color)" />
           </a>
           <a
             href={project.frontmatter.github}
@@ -50,10 +46,10 @@ const Project = ({ data }) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <input
-              type="image"
-              src={Github}
-              style={{ width: "4rem", height: "3rem" }}
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="3x"
+              color="var(--quat-color)"
             />
           </a>
         </div>
@@ -61,13 +57,13 @@ const Project = ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
 
         <Link to={`/projects`}>
-          <input
-            type="image"
-            alt="left-nav"
-            src={LeftIcon}
-            style={{ width: "30px", height: "30px", marginTop: "2rem" }}
+          <FontAwesomeIcon
+            icon={faArrowCircleLeft}
+            size="2x"
+            color="var(--quat-color)"
+            style={{ marginRight: ".5rem", marginTop: "2rem" }}
           />
-          <div>Back to the Projects</div>
+          <span>Back to the Projects</span>
         </Link>
       </main>
     </Layout>
