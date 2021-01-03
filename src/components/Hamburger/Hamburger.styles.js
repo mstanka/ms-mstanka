@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const HamburgerIcon = styled.div`
+export const HamburgerIcon = styled.button`
   display: block;
   width: 30px;
   z-index: 1000;

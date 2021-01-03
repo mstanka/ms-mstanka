@@ -27,12 +27,12 @@ const ContactComp = () => {
       >
         <a
           href="https://github.com/mstanka"
+          alt="Github"
           target="_blank"
           rel="noreferrer noopener"
         >
           <input
             type="image"
-            alt="Github"
             src={Github}
             style={{ width: "4rem", height: "3rem" }}
           />
@@ -40,36 +40,36 @@ const ContactComp = () => {
 
         <a
           href="https://twitter.com/StankovaMarketa"
+          alt="Twitter"
           target="_blank"
           rel="noreferrer noopener"
         >
           <input
             type="image"
-            alt="Twitter"
             src={Twitter}
             style={{ width: "4rem", height: "4rem" }}
           />
         </a>
         <a
           href="https://500px.com/mstanka"
+          alt="500px"
           target="_blank"
           rel="noreferrer noopener"
         >
           <input
             type="image"
-            alt="500px"
             src={Foto}
             style={{ width: "4rem", height: "3rem" }}
           />
         </a>
         <a
           href="https://codepen.io/mstanka"
+          alt="Codepen"
           target="_blank"
           rel="noreferrer noopener"
         >
           <input
             type="image"
-            alt="Codepen"
             src={Codepen}
             style={{ width: "4rem", height: "3rem" }}
           />

@@ -18,7 +18,7 @@ import {
 const BlogPostCard = ({ slug, title, date, readingTime, excerpt, image }) => (
   <CardWrapper>
     <ImgWrapper>
-      <Img fluid={image} />
+      <Img fluid={image} alt="Blog post intro image"/>
     </ImgWrapper>
     <TextWrapper>
       <Link to={slug}>

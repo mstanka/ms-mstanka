@@ -34,24 +34,24 @@ const Project = ({ data }) => {
         >
           <a
             href={project.frontmatter.preview}
+            alt="Preview"
             target="_blank"
             rel="noreferrer noopener"
           >
             <input
               type="image"
-              alt="Preview"
               src={Preview}
               style={{ width: "4rem", height: "4rem" }}
             />
           </a>
           <a
             href={project.frontmatter.github}
+            alt="Github"
             target="_blank"
             rel="noreferrer noopener"
           >
             <input
               type="image"
-              alt="Github"
               src={Github}
               style={{ width: "4rem", height: "3rem" }}
             />

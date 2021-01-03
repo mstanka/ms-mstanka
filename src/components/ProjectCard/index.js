@@ -15,7 +15,7 @@ const ProjectCard = ({ slug, title, subtitle, excerpt, image }) => (
   <CardWrapper>
     <Link to={slug}>
       <ImgWrapper>
-        <Img fluid={image} />
+        <Img fluid={image} alt="Project intro image"/>
       </ImgWrapper>
     </Link>
     <TextWrapper>
