@@ -5,6 +5,8 @@ export const HamburgerIcon = styled.button`
   width: 30px;
   z-index: 1000;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   :after,
   :before,

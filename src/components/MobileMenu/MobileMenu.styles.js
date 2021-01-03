@@ -9,12 +9,11 @@ export const OverrideGlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
   display: block;
   position: fixed;
-  left: ${props => (props.menuOpen ? '0px' : '-320px')};
-  width: 320px;
+  left: ${props => (props.menuOpen ? '0px' : '-768px')};
   background: var(--header-bg);
   top: 0;
   padding: 0;
-  transition: all .3s ease;
+  transition: all 1s ease-in-out;
   z-index: 10;
 
   @media screen and (min-width: 768px) {
@@ -24,9 +23,9 @@ export const Wrapper = styled.div`
 
 export const Nav = styled.ul`
   position: absolute;
-  width: 60%;
+  width: 100vw;
   height: 100vh;
-  top: 100px;
+  top: 150px;
   list-style-type: none;
   padding: 0 2rem;
   font-size: 1.2rem;
