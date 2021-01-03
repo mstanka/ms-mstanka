@@ -13,20 +13,15 @@ const Footer = () => {
     <Wrapper>
       <div>
         {" "}
-        © {new Date().getFullYear()}, Built by
+        © {new Date().getFullYear()}, by
         {` `} {data.author} {` `} using{" "}
         <a
           href="https://www.gatsbyjs.com/"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Gatsby{" "}
+          Gatsby.{" "}
         </a>
-        and{" "}
-        <a href="https://icons8.com/" target="_blank" rel="noreferrer noopener">
-          Icons8
-        </a>
-        .
       </div>
     </Wrapper>
   )

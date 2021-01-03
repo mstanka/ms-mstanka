@@ -2,8 +2,9 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 // Icons
-import DateIcon from "../../images/calendar.svg"
-import TimeIcon from "../../images/watch.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCalendar, faClock } from "@fortawesome/free-solid-svg-icons"
+
 // Styles
 import {
   CardWrapper,
@@ -12,13 +13,13 @@ import {
   StatWrapper,
   DateWrapper,
   ReadingTimeWrapper,
-  Title
+  Title,
 } from "./BlogPostCard.styles"
 
 const BlogPostCard = ({ slug, title, date, readingTime, excerpt, image }) => (
   <CardWrapper>
     <ImgWrapper>
-      <Img fluid={image} alt="Blog post intro image"/>
+      <Img fluid={image} alt="Blog post intro image" />
     </ImgWrapper>
     <TextWrapper>
       <Link to={slug}>
@@ -26,11 +27,21 @@ const BlogPostCard = ({ slug, title, date, readingTime, excerpt, image }) => (
       </Link>
       <StatWrapper>
         <DateWrapper>
-          <img src={DateIcon} alt="date" />
+          <FontAwesomeIcon
+            icon={faCalendar}
+            size="2x"
+            color="var(--quat-color)"
+            style={{ marginRight: ".5rem" }}
+          />
           {date}
         </DateWrapper>
         <ReadingTimeWrapper>
-          <img src={TimeIcon} alt="time" />
+          <FontAwesomeIcon
+            icon={faClock}
+            size="2x"
+            color="var(--quat-color)"
+            style={{ marginRight: ".5rem" }}
+          />
           {readingTime}
         </ReadingTimeWrapper>
       </StatWrapper>
