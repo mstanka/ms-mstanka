@@ -25,7 +25,7 @@ const Post = ({ data }) => {
             size="2x"
             color="var(--quat-color)"
             style={{ marginRight: ".5rem", marginTop: "2rem" }}
-          />          
+          />
           <span>Back to the Posts</span>
         </Link>
       </main>
@@ -38,7 +38,7 @@ export default Post
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      html      
       frontmatter {
         title
         date(formatString: "MMMM Do, YYYY", locale: "us")

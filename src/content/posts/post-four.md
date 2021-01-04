@@ -18,7 +18,7 @@ JAM stands for JavaScript, APIs, and Markup.
 
 Tina is open-source site editing toolkit for React-based sites like Gatsby & Next.js. Using it you can manage content on your site directly, not on another platform. You can open the sidebar, edit your site and watch the content updating in real-time.
 
-I was curious so I used a [starter template](ttps://github.com/tinacms/tina-starter-grande) to explore more.
+I was curious so I used a [starter template](https://github.com/tinacms/tina-starter-grande) to explore more.
 
 The starter offers following features
 

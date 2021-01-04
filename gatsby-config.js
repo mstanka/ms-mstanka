@@ -51,6 +51,22 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+              // linkImagesToOriginal: true,
+              // wrapperStyle: fluidResult =>
+              //   `flex:${_.round(fluidResult.aspectRatio, 2)};`,
+            },
+          },
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
