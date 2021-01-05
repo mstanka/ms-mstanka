@@ -1,6 +1,6 @@
 ---
 type: "post"
-title: "Homepage design for Travel Tcheque"
+title: "Homepage design for Tcheque Travel"
 date: "2020-04-26"
 image: "../../images/post_travel_plans.jpg"
 published: true
