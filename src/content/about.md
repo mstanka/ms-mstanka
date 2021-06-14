@@ -1,7 +1,9 @@
 ---
 type: "about"
 title: "Marketa Stankova"
-subtitle: "Web Developer and Designer"
+subtitle: "Frontend Developer"
 ---
 
-I build modern responsive websites using [JAMstack](https://jamstack.org/) approach. After several websites built on Wordpress, I found excitement in using HTML/CSS and Javascript's libraries and frameworks. I learn about programming in general, about UI/UX design, cloud technologies, and other interesting topics.
+The pharmacist's background turned into an enthusiastic web developer who started building her first websites using WordPress. Soon realized that writing her code is more fun, and therefore started learning HTML/CSS and Javascript/React on her own.
+
+Learn about a modern approach to build websites using Jamstack, programming in general, UI/UX design, cloud technologies, and other topics. Concentrated on learning good practices, write clean code, and follow DRY principles.
