@@ -7,7 +7,6 @@ import {
   faGithub,
   faTwitter,
   fa500px,
-  faCodepen,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Wrapper, ContactImageWrapper } from "./ContactComp.styles"
@@ -69,20 +68,7 @@ const ContactComp = () => {
             color="var(--quat-color)"
             style={{ margin: "0 .5rem" }}
           />
-        </a>
-        <a
-          href="https://codepen.io/mstanka"
-          alt="Codepen"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <FontAwesomeIcon
-            icon={faCodepen}
-            size="3x"
-            color="var(--quat-color)"
-            style={{ margin: "0 .5rem" }}
-          />
-        </a>
+        </a>        
       </div>
     </Wrapper>
   )
